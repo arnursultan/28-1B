@@ -3,24 +3,24 @@
 # QLabel, QPushButton, QLineEdit и др. - стандартные виджеты
 
 #1
-# import sys
-# from PyQt6.QtWidgets import QApplication, QWidget, QLabel
-#
-# class MainWindow(QWidget):
-#     def __init__(self):
-#         super().__init__()
-#
-#         self.setWindowTitle("Привет, PyQt6!")
-#         self.setGeometry(400, 800, 300, 200)
-#
-#         self.label = QLabel("Добро пожаловать в PyQt6!",self)
-#         self.label.move(50, 80)
-#
-# if __name__ == '__main__':
-#     app = QApplication(sys.argv)
-#     window = MainWindow()
-#     window.show()
-#     sys.exit(app.exec())
+import sys
+from PyQt6.QtWidgets import QApplication, QWidget, QLabel
+
+class MainWindow(QWidget):
+    def __init__(self):
+        super().__init__()
+
+        self.setWindowTitle("Привет, PyQt6!")
+        self.setGeometry(400, 800, 300, 200)
+
+        self.label = QLabel("Добро пожаловать в PyQt6!",self)
+        self.label.move(50, 80)
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    sys.exit(app.exec())
 
 #2
 import sys
