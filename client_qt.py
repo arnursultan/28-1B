@@ -9,7 +9,7 @@ class ClientApp(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle('PyQt6 Клиент')
-        self.resize(300, 150)
+        self.resize(400, 200)
 
         layout = QVBoxLayout()
 
